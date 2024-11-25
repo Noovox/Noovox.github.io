@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noovox - Thought Leadership Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #2d3748;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #2c5282;
+        }
+
+        .coming-soon {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .tagline {
+            font-size: 2.25rem;
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            color: #1a202c;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            color: #4a5568;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .feature {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            color: #2c5282;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .feature p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .cta {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: #2c5282;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #2d3748;
+        }
+
+        .contact {
+            margin-top: 3rem;
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        .email {
+            color: #2c5282;
+            text-decoration: none;
+            border-bottom: 1px dotted #2c5282;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            .tagline {
+                font-size: 1.75rem;
+            }
+            .description {
+                font-size: 1.1rem;
+                padding: 0 1rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">NOOVOX</div>
+        <div class="coming-soon">Coming Soon</div>
+        
+        <div class="tagline">
+            Empowering Leaders to Share Knowledge and Shape the Future
+        </div>
+
+        <div class="description">
+            Noovox is a revolutionary thought leadership platform that connects industry experts, innovators, and decision-makers. Share insights, discover breakthrough ideas, and participate in meaningful discussions that drive innovation and growth.
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Curated Knowledge Exchange</h3>
+                <p>Access and share high-quality insights from industry leaders, verified experts, and innovative thinkers. Our platform ensures that valuable knowledge reaches the right audience.</p>
+            </div>
+            <div class="feature">
+                <h3>Collaborative Innovation</h3>
+                <p>Engage in meaningful discussions, contribute to industry dialogues, and collaborate with fellow thought leaders to shape the future of your field.</p>
+            </div>
+            <div class="feature">
+                <h3>Amplified Impact</h3>
+                <p>Leverage our platform to extend your reach, establish your expertise, and connect with decision-makers who can turn insights into action.</p>
+            </div>
+        </div>
+
+        <a href="#" class="cta">Join the Waitlist</a>
+
+        <div class="contact">
+            For partnership inquiries, contact us at <a href="mailto:info@noovox.com" class="email">info@noovox.com</a>
+        </div>
+    </div>
+</body>
+</html>
