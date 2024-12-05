@@ -1,131 +1,258 @@
-import React from 'react';
-import { MessageCircleQuestion, Rocket, TrendingUp, ChevronRight } from 'lucide-react';
-
-const NoovoxLandingPage = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col justify-center items-center text-center">
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        {/* Header */}
-        <header className="mb-16 flex flex-col items-center">
-          <div className="text-6xl font-extrabold text-blue-900 mb-4">NOOVOX</div>
-          <div className="text-sm text-gray-500 uppercase tracking-wider">Coming Soon</div>
+# Content for index.html (same as previous HTML artifact)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noovox - Empowering Leaders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand">NOOVOX</div>
+            <div class="coming-soon">Coming Soon</div>
         </header>
 
-        {/* Hero Section */}
-        <section className="mb-16">
-          <h1 className="text-5xl font-bold text-blue-900 mb-6 max-w-3xl mx-auto leading-tight">
-            Less Thought. More Leadership.
-          </h1>
-          <p className="max-w-2xl mx-auto text-lg text-gray-700 mb-10">
-            Revolutionize the way you build influence, create content, and connect with your audience. 
-            Our AI-driven platform empowers leaders with an intelligent, personalized agent that transforms 
-            thought leadership into a scalable, impactful tool for success.
-          </p>
+        <section class="hero">
+            <h1>Empowering Leaders to Share Knowledge and Shape the Future</h1>
+            <p>Revolutionize the way you build influence, create content, and connect with your audience. Our AI-driven platform empowers leaders with an intelligent, personalized agent that transforms thought leadership into a scalable, impactful tool for success.</p>
         </section>
 
-        {/* Visionaries Section */}
-        <section className="flex justify-between gap-8 mb-16">
-          {[
-            { 
-              icon: MessageCircleQuestion, 
-              title: "Impactful Ideas", 
-              description: "Transform your complex thoughts into compelling content effortlessly" 
-            },
-            { 
-              icon: TrendingUp, 
-              title: "Digital Presence", 
-              description: "Elevate your online influence with intelligent, strategic content" 
-            },
-            { 
-              icon: Rocket, 
-              title: "Personalized Insights", 
-              description: "Leverage data-driven strategies to stand out in your industry" 
-            }
-          ].map(({ icon: Icon, title, description }, index) => (
-            <div 
-              key={index} 
-              className="flex-1 bg-white shadow-lg rounded-2xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-xl text-center"
-            >
-              <Icon className="mx-auto mb-6 text-blue-800" size={64} strokeWidth={1.5} />
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">{title}</h3>
-              <p className="text-gray-600">{description}</p>
+        <section class="visionaries">
+            <div class="visionary-card">
+                <div class="icon message-icon"></div>
+                <h3>Impactful Ideas</h3>
+                <p>Transform your complex thoughts into compelling content effortlessly</p>
             </div>
-          ))}
+            <div class="visionary-card">
+                <div class="icon trending-icon"></div>
+                <h3>Digital Presence</h3>
+                <p>Elevate your online influence with intelligent, strategic content</p>
+            </div>
+            <div class="visionary-card">
+                <div class="icon rocket-icon"></div>
+                <h3>Personalized Insights</h3>
+                <p>Leverage data-driven strategies to stand out in your industry</p>
+            </div>
         </section>
 
-        {/* What is Noovox */}
-        <section className="mb-16 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6">What is Noovox</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Noovox is a premium, low-touch B2B platform designed to amplify your professional voice. 
-            We go beyond traditional AI tools by deeply analyzing your industry, peers, and competition 
-            to uncover your unique strengths—empowering you to lead with authentic, impactful insights.
-          </p>
+        <section class="about">
+            <h2>What is Noovox</h2>
+            <p>Noovox is a premium, low-touch B2B platform designed to amplify your professional voice. We go beyond traditional AI tools by deeply analyzing your industry, peers, and competition to uncover your unique strengths—empowering you to lead with authentic, impactful insights.</p>
         </section>
 
-        {/* Waitlist Benefits */}
-        <section className="mb-16 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-blue-900 mb-10">Why Join the Waitlist?</h2>
-          <div className="flex justify-between gap-8">
-            {[
-              {
-                title: "Unlock Potential",
-                description: "Your AI agent crafts personalized content that captures your unique voice and strategic goals."
-              },
-              {
-                title: "Stay Ahead",
-                description: "Leverage cutting-edge insights and real-time data to position yourself as an industry thought leader."
-              },
-              {
-                title: "Be Innovative",
-                description: "Gain exclusive early access to a premium platform that revolutionizes professional content creation."
-              }
-            ].map(({ title, description }, index) => (
-              <div key={index} className="flex-1 bg-white shadow-md rounded-xl p-6 text-center">
-                <h3 className="text-xl font-bold text-blue-800 mb-4">{title}</h3>
-                <p className="text-gray-600">{description}</p>
-              </div>
-            ))}
-          </div>
+        <section class="waitlist-benefits">
+            <h2>Why Join the Waitlist?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Unlock Potential</h3>
+                    <p>Your AI agent crafts personalized content that captures your unique voice and strategic goals.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Stay Ahead</h3>
+                    <p>Leverage cutting-edge insights and real-time data to position yourself as an industry thought leader.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Be Innovative</h3>
+                    <p>Gain exclusive early access to a premium platform that revolutionizes professional content creation.</p>
+                </div>
+            </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="mb-16">
-          <p className="max-w-2xl mx-auto text-lg text-gray-700 mb-10">
-            Secure your place among the first to access the next generation of thought leadership tools. 
-            Our early adopters are already experiencing the power of AI agents—don't miss your chance to lead.
-          </p>
-          <button 
-            className="group flex items-center justify-center mx-auto bg-blue-800 text-white px-10 py-4 rounded-full text-lg font-bold 
-            hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-          >
-            Join the Waitlist
-            <ChevronRight className="ml-3 group-hover:translate-x-1 transition-transform" />
-          </button>
+        <section class="cta">
+            <p>Secure your place among the first to access the next generation of thought leadership tools. Our early adopters are already experiencing the power of AI agents—don't miss your chance to lead.</p>
+            <button class="waitlist-button">Join the Waitlist <span class="arrow">→</span></button>
         </section>
 
-        {/* Footer */}
-        <footer className="text-center text-gray-600">
-          <p>
-            For partnership inquiries, contact us at{' '}
-            <a 
-              href="mailto:info@noovox.com" 
-              className="text-blue-800 hover:underline font-semibold"
-            >
-              info@noovox.com
-            </a>
-          </p>
+        <footer>
+            <p>For partnership inquiries, contact us at <a href="mailto:info@noovox.com">info@noovox.com</a></p>
         </footer>
-      </div>
-    </div>
-  );
-};
-
-export default NoovoxLandingPage;
-
-        <div class="contact">
-            For partnership inquiries, contact us at <a href="mailto:info@noovox.com" class="email">info@noovox.com</a>
-        </div>
     </div>
 </body>
 </html>
+
+# Content for styles.css (same as previous CSS artifact)
+:root {
+    --blue-50: #f0f5ff;
+    --blue-800: #1e40af;
+    --blue-900: #1e3a8a;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, var(--blue-50), white);
+    color: var(--gray-700);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 4rem;
+}
+
+.brand {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--blue-900);
+    margin-bottom: 0.5rem;
+}
+
+.coming-soon {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gray-500);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--blue-900);
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--gray-600);
+    font-size: 1.1rem;
+}
+
+.visionaries {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.visionary-card {
+    flex: 1;
+    background: white;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.visionary-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 20px -5px rgba(0,0,0,0.15);
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.message-icon { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%231e40af" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>'); }
+.trending-icon { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%231e40af" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>'); }
+.rocket-icon { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%231e40af" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'); }
+
+.visionary-card h3 {
+    color: var(--blue-900);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.about, .waitlist-benefits {
+    max-width: 800px;
+    margin: 4rem auto;
+}
+
+.about h2, .waitlist-benefits h2 {
+    color: var(--blue-900);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.benefits-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.benefit-card {
+    flex: 1;
+    background: white;
+    box-shadow: 0 5px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.benefit-card h3 {
+    color: var(--blue-800);
+    margin-bottom: 1rem;
+}
+
+.cta {
+    max-width: 700px;
+    margin: 4rem auto;
+}
+
+.waitlist-button {
+    background-color: var(--blue-800);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.waitlist-button:hover {
+    background-color: #1e3a8a;
+    transform: scale(1.05);
+}
+
+.arrow {
+    margin-left: 0.5rem;
+}
+
+footer {
+    margin-top: 4rem;
+    color: var(--gray-600);
+}
+
+footer a {
+    color: var(--blue-800);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .visionaries, .benefits-grid {
+        flex-direction: column;
+    }
+
+    .brand {
+        font-size: 2.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
